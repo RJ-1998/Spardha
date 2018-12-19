@@ -147,8 +147,8 @@ body{color: #fff;font-family: 'Poppins', sans-serif;}
     .navbar-header{float: right;}
     .navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand{margin-left: 0;margin-right: -10px;}
     .navbar-brand{height: auto;padding: 15px 20px;}
-    .navbar-brand>img{width: 70px;}
-    .navbar-nologo .navbar-brand{display: none;}
+    .navbar-brand>img{width: 55px;}
+    .navbar-nologo .navbar-brand{display: block;}
     .navbar-nologo.navbar-white .navbar-brand{display: block;}
 
     .location-rotate{position: fixed;font-size: 16px;font-family: 'andale_mono';color: #62f1d2;-webkit-transform:rotate(-90deg);
@@ -214,8 +214,8 @@ body{color: #fff;font-family: 'Poppins', sans-serif;}
     .menu-text .social a{font-size: 24px;color: #042a3b;margin:0 5px;text-decoration: none!important;}
     .menu-text .btn{width:220px;}
 
-    .menu-logo{max-width: 540px;margin:0 auto;}
-    .menu-logo img{display:block;max-width: 100%;}
+    .menu-logo{max-width: 540px;margin-left:30%}
+    .menu-logo img{display:block;max-width: 60%;}
 
     .menu-open, .modal-open, .bio-open{overflow: hidden!important;height: 100%!important;}
     .menu-backdrop, .navbar-xs-backdrop{position: fixed;top:0;bottom: 0;left: 0;right: 0;background-color: rgba(0,0,0,.5);
