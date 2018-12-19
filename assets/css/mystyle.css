@@ -1,0 +1,32 @@
+@media only screen and (min-width:200px) and (max-width:670px){
+    .logo_image{width:100%;position: relative;display:inline-block;}
+    .sabrang_date{position:absolute;left:50%;transform:translate(-50%,-150%);top:1%;}
+    .poster{width:70%;margin-top:10%;margin-left:15%;margin-bottom:10%;}
+}
+
+@media only screen and (min-width:700px) and (max-width:959px){
+    .logo_image{position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);width:80%;}
+        .sabrang_date{position:absolute;left:50%;transform:translate(-50%,-450%);top:1%;}
+        .poster{width:60%;margin-top:10%;margin-left:20%}
+}
+
+@media only screen and (min-width:960px){
+    .logo_image{position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);width:75%;}
+        .sabrang_date{position:absolute;left:50%;transform:translate(-50%,-450%);top:10%;}
+        .poster{width:60%;margin-top:10%;margin-left:20%}
+}
+
+.register_text{
+    position:absolute;top:2%;right:2%;
+    z-index:1;border-style:none;
+    box-shadow:0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19) !important;
+    padding:10px;background-color:#62f1d2;
+    font-weight: bold;
+    cursor:pointer;color:#042433;font-size:18px;
+    text-decoration:none;font-family:'Roboto Mono', monospace;}
