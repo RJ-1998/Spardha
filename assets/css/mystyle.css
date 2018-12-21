@@ -19,7 +19,9 @@
         left: 50%;
         transform: translate(-50%, -50%);width:75%;}
         .sabrang_date{position:absolute;left:50%;transform:translate(-50%,-450%);top:10%;}
-        .poster{width:60%;margin-top:8%;margin-left:20%}
+        .poster{width:60%;margin-top:6%;margin-left:20%}
+        .bio-right-logo img{display: block;max-width: 30%;}
+        .sabrang_countdown{position: fixed;right:-100px;transform:translate(-50%,-50%);bottom:15px;}
 }
 
 .register_text{
