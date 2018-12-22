@@ -1,7 +1,15 @@
 @media only screen and (min-width:200px) and (max-width:670px){
     .logo_image{width:100%;position: relative;display:inline-block;}
     .sabrang_date{position:absolute;left:50%;transform:translate(-50%,-150%);top:1%;}
-    .poster{width:70%;margin-top:10%;margin-left:15%;margin-bottom:10%;}
+    .poster{width:80%;margin-top:10%;margin-left:10%;margin-bottom:10%;}
+
+    .div1{
+        float:left;
+        position: relative;;
+        margin-top:20%;
+        background-color:rgba(0,0,0,40%);
+        width:100%;
+    }
 }
 
 @media only screen and (min-width:700px) and (max-width:959px){
@@ -22,6 +30,7 @@
         .poster{width:60%;margin-top:6%;margin-left:20%}
         .bio-right-logo img{display: block;max-width: 30%;}
         .sabrang_countdown{position: fixed;right:-100px;transform:translate(-50%,-50%);bottom:15px;}
+
 }
 
 .register_text{
@@ -32,3 +41,45 @@
     font-weight: bold;
     cursor:pointer;color:#042433;font-size:18px;
     text-decoration:none;font-family:'Roboto Mono', monospace;}
+
+    
+    .textfield{
+        width: 100%;
+        margin: 0px 0px 18px 0px;
+        box-sizing: border-box;
+        border-color: #62f1d2;color: #fff;
+        background-color:transparent;
+        border-radius:3px;border-width: 1px;
+        padding:5px;
+        font-size:14px;
+        color:white;
+        }
+        .submitButton{
+        width: 30%;
+        font-size:14px;
+        padding:10px;
+        margin-top:10px;
+        margin-left:35%;
+        box-sizing: border-box;
+        border-color: #62f1d2;color: #fff;
+        background-color:transparent;
+        border-radius:3px;border-width: 1px;
+        color:white;
+        cursor:pointer;
+        }
+        .div1{
+            float:left;
+            position: relative;;
+            top:10%;
+            background-color:rgba(0,0,0,40%);
+            padding:30px;
+        }
+        .list{
+            width:100%;font-size:14px;
+            box-sizing: border-box;
+            border-color: #62f1d2;color: #fff;
+            background-color:transparent;
+            border-radius:3px;border-width: 1px;
+            padding:5px;
+        }
+        .list > option{color: black}
