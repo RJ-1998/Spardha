@@ -3,12 +3,178 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
+    <title>Spardha 2019 | Register</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script>
+    <link rel="icon" type="image/png" href="favicon.png" sizes="any"><!--Favicon-->
+    <meta name="theme-color" content="#082636"><!--Theme Color-->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/slick.css" rel="stylesheet">
+    <link href="assets/css/animate.css" rel="stylesheet">
+    <link href="assets/css/jquery.fullpage.min.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/mystyle.css" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:500" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,900" rel="stylesheet"> 	
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <!--[if lt IE 9]>
+        <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="//oss.maxcdn.com/libs/respond.assets/js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 </head>
-<body>
+<body class="bg">
+    <div class="navbar navbar-fixed-top navbar-nologo">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button class="hamburger " type="button" data-toggle="navigation">
+                        <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                        </span>
+                    </button>
+                    <a class="navbar-brand" href="index.html">
+                        <img src="assets/img/newspardhalogo.png" alt="">
+                    </a>
+                </div>
+            </div>
+    </div>
     
+    <div class="menu-backdrop"></div>
+    <div id="menu">
+        <button class="hamburger" type="button" data-toggle="navigation">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </button>
+        <div class="menu-wrap">
+            <div class="menu-nav">
+                <div class="left-middle">
+                    <ul class="nav">
+                        <li class="first"><a href="index.html"><span>Home</span></a></li>
+                        <li class="first"><a href="events.html"><span>Events</span></a></li
+                            ><li class="first"><a href="schedule.html"><span>Schedule</span>
+                            </a></li>
+                            <li class="active"><a href="register.html"><span>Register</span>
+                            </a></li>
+                            <li class="first"><a href="#"><span>Contact Us</span>
+                            </a></li>
+                            <li class="first"><a href="transportation.html"><span>Transportation</span>
+                            </a></li>
+                            <li class="first"><a href="brochure.html"><span>Brochure</span>
+                            </a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="menu-text">
+                <div class="center-middle">
+                    <div class="menu-text-inner">
+                        <div class="menu-logo">
+                            <img src="assets/img/newspardhalogo.png" alt="">
+                        </div>
+                        <div class="menu-event">
+                            <div class="date">Jaipur, 22-24 FEB, 2019</div>
+                            <div class="location">Spardha 2019 | Show your Passion </div>
+                            <a href="register.html"  class="btn btn-info"><span>REGISTER NOW</span></a>       
+                            <div class="social">
+                                <a href="https://www.youtube.com/watch?v=vrtBwWZkOC8" target="_blank"><i class="fa fa-youtube"></i></a>
+                                <a href="https://bit.ly/2EJPgT4" target="_blank"><i class="ic-facebook"></i></a>
+                                <a href="https://www.instagram.com/spardhajklu/" target="_blank"><i class="ic-instagram"></i></a>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+    <div class="landscape-msg">
+            <div class="left-middle">
+                <div class="msg">
+                    <img src="assets/img/rotate-phone.png">
+                    <h2>Rotate your phone</h2>
+                </div>
+            </div>
+    </div>
+    
+    <div class="side-wrap clearfix">
+        <div class="left-side">
+            <div class="inner-content center">
+                <div class="left-middle no-xs" style="padding-right:0px;padding-left:0px;">
+                <div class="div1" id="form_div">
+            <form method="POST" action="" onkeypress="return event.keyCode != 13;">
+                <center style="color:white;font-size:22px;margin-bottom:20px;">Register Yourself</center>
+                <!--TODO styling of event list -->
+    
+                <span style="color:white;font-size:16px;margin-right:5px">Select Event</span>
+                <select name="event" class="list" id="select">
+                    <option selected="selected" value="">Choose an Option...</option>
+                    <option value="Aaja Nachle">Aaja Nachle</option>
+                    <option value="Aaroh Avroh">Aaroh Avroh</option>
+                </select>
+                <!-- TODO Styling of radio buttons--></br>
+                <input type="text" id="fees" style="width: 10%;
+                box-sizing: border-box;
+                border: none;
+                font-size:18px;
+                background-color:transparent;
+                color:white;
+                visibility:hidden" name="fees" value="" readonly><span id="showcategory" style="visibility:hidden">Solo</span>
+                <div style="margin-bottom:2%;color:white;">
+                <input type="radio" name="category" checked id="category" value="Solo">Solo
+                <input type="radio" name="category" id="category" value="Team">Team
+                </div>  
+                <input type="number" placeholder="Number of Teammates*" name="teammates" class="textfield" value="1" style="display:none" id="teammates" >
+                <input type="text" placeholder="Name of Your Team(if any)" name="teamname" class="textfield" style="display:none" id="teamname" >
+    
+                <input type="text" placeholder="Name*" name="name" class="textfield" id="leader" readonly>
+                <input type="text" placeholder="College*" name="college" class="textfield" required>
+                <input type="email" placeholder="Email*" name="email" class="textfield" id="email" readonly>
+                <input type="tel" placeholder="First Phone Number*" name="phone1" class="textfield" id="firstPhone" required>
+                <input type="tel" placeholder="Second Phone Number*" name="phone2" class="textfield" id="secondPhone" required>
+                <center><p id="message" style="color:white"></p></center>
+                <!-- TODO styleing of Accommodation 
+                </br>
+                <label style="color:white;font-size:18px;margin-bottom:2%">Need Accommodation?</label>
+                </br>
+                <div style="color:white;font-size:18px;margin-top:2%;">
+                <input type="radio" name="accommodation" id="Accommodation" value="Yes">Yes
+                <input type="radio" name="accommodation" id="Accommodation" checked value="No">No 
+                </div>
+                </br>
+                <input type="number" placeholder="Number of participants*" name="persons" class="textfield" style="display:none;" id="Accommodation_info" >
+                <input type="tel" placeholder="Conatct Number*" name="contact" class="textfield" style="display:none;" id="Accommodation_info" >-->
+                <input type="button" value="Check" class="submitButton" id="checkButton" style="cursor:pointer">
+                <center><input type="submit"class="g-recaptcha"
+                data-sitekey="6LcEHXcUAAAAAK5ck-FQhehR1W1MN7risXrAQsQQ" 
+                value="REGISTER" name="submit" class="submitButton" id="validate_data" style="cursor:pointer;display:none;">
+                </center>
+                <center style="margin-top:20px;color:white;font-size:12px">
+                    Facing Some Problem?<br>Drop an E-mail<br>
+                    spardhajklu@gmail.com
+                </center>
+            </form></div>
+            </div>
+            </div>
+        </div>
+        <div class="right-side">
+            <img class="poster" src="assets/img/SpardhaPoster2.jpg">
+        </div>
+    </div>
+
+    <!--------------FOOTER---------------->
+    <footer class="section fp-auto-height" style="position:absolute;left:50%;transform:translate(-50%,-50%);top:100%;">
+        <div class="crafted">Designed By Team Spardha</div>
+    </footer> 
+    <script src="assets/js/jquery-1.11.0.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/fastclick.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/mgGlitch.min.js"></script>
+    <script src="assets/js/iscroll.js"></script>
+    <script src="assets/js/validator.min.js"></script>
+    <script src="assets/js/cookie.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/try.js"></script>
 </body>
 </html>
