@@ -83,3 +83,41 @@
             padding:5px;
         }
         .list > option{color: black}
+
+
+.card{
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    height:500px;
+    margin-top:20%;
+    background: #000;
+    transition:0.5s
+}
+.card:hover .img-box{
+    opacity:0.5;
+}
+.img-box > img{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.card .content{
+    position: absolute;
+    width:100%;
+    height: 60%;
+    bottom:-100%;
+    padding:20px;
+    box-sizing: border-box;
+    text-align: center;
+    background: linear-gradient(0deg,#c21833,transparent);
+}
+.card:hover .content{
+    bottom:0;
+    transition: 0.6s
+}
+.card .content h3{
+    color: #e2f345;
+}        
