@@ -1,0 +1,13 @@
+# www.robotstxt.org/
+
+# Allow crawling of all content
+User-agent: *
+Disallow: assets/js/
+Disallow: assets/img/
+Disallow: assets/css/
+Disallow: assets/video/
+Disallow: assets/fonts/
+Disallow: old/
+Disallow: assets/css/later_register.html
+
+http://spardha.jklu.edu.in/sitemap.xml
