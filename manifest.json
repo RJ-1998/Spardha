@@ -1,6 +1,6 @@
 {
     "short_name": "Spardha",
-    "name": "Sabrang 2019",
+    "name": "Spardha 2019",
     "icons": [
       {
         "src": "http://spardha.jklu.edu.in/assets/img/newspardhalogo.png",
@@ -12,5 +12,5 @@
     "background_color": "#000",
     "display": "standalone",
     "orientation": "portrait",
-    "value": "Sabrang 2018"
+    "value": "Spardha 2018"
   }
