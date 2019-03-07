@@ -35,7 +35,7 @@
 
 .register_text{
     position:absolute;top:2%;right:2%;
-    z-index:1;border-style:none;
+    z-index:2000;border-style:none;
     box-shadow:0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19) !important;
     padding:10px;background-color:#62f1d2;
     font-weight: bold;

@@ -33,106 +33,92 @@ function onSignIn(googleUser) {
 
 check.addEventListener('click',function(){
     switch (select.value){
-    case 'Aaja Nachle':
-    if(showcategory.innerHTML=="Solo")
-    {fees="100";}
-    else if(showcategory.innerHTML=="Team"){fees="300";}
+    case 'CRICKET':
+    fees="3300";
     getfees.value=fees;
     break;
-    case 'Aaroh Avroh':
-    fees="150";
+
+    case 'BASKETBALL':
+    fees="1500";
     getfees.value=fees;
     break;
-    case 'Swar Bandish':
+    
+    case 'VOLLEYBALL':
     fees="1200";
     getfees.value=fees;
     break;
-    case 'Dj War':
-    fees="1000";
-    getfees.value=fees;
-    break;
-    case 'Paridhan':
+    
+    case 'TABLETENNIS(TEAMEVENT)':
     fees="800";
     getfees.value=fees;
     break;
-    case 'Pratibha':
-    fees="150";
-    getfees.value=fees;
-    break;
-    case 'Rangmanch':
-    fees="300";
-    getfees.value=fees;
-    break;
-    case 'The Logicians':
-    fees="250";
-    getfees.value=fees;
-    break;
-    case 'Pratiroop':
-    fees="150";
-    getfees.value=fees;
-    break;
-    case 'Chakravyuh':
-    fees="250";
-    getfees.value=fees;
-    break;
-    case 'Abhikalitra':
-    fees="100";
-    getfees.value=fees;
-    break;
-    case 'Kurukshetra(Counter Strike)':
-    fees="250";
-    getfees.value=fees;
-    break;
-    case 'Kurukshetra(FIFA)':
-    case 'Kurukshetra(BLUR)':
-    case 'Kurukshetra(PUBG)':
-    fees="100";
-    getfees.value=fees;
-    break;
-    case 'Bridge Designing':
-    fees="150";
-    getfees.value=fees;
-    break;
-    case 'Yantra Samar':
-    fees="150";
-    getfees.value=fees;
-    break;
-    case 'Anukriti':
-    fees="150";
-    getfees.value=fees;
-    break;
-    case 'Yudh kar':
-    fees="250";
-    getfees.value=fees;
-    break;
-    case 'Chitrakala':
-    fees="150";
-    getfees.value=fees;
-    break;
-    case 'Design Challenge':
-    fees="1000";
-    getfees.value=fees;
-    break;
-    case 'Abhivyakti':
+    case 'TABLETENNIS(SINGLES)':
     fees="200";
     getfees.value=fees;
     break;
-    case 'Bulls & Bears':
+    case 'TABLETENNIS(DOUBLES)':
+    fees="300";
+    getfees.value=fees;
+    break;
+
+    case 'CARROM':
+    fees="200";
+    getfees.value=fees;
+    break;
+    
+    case 'CHESS':
+    fees="200";
+    getfees.value=fees;
+    break;
+    case 'FOOTBALL':
+    fees="1500";
+    getfees.value=fees;
+    break;
+    case 'KABADDI':
+    fees="1200";
+    getfees.value=fees;
+    break;
+    case '100M':
+    fees="100";
+    getfees.value=fees;
+    break;
+    case 'SHOTPUT':
+    fees="100";
+    getfees.value=fees;
+    break;
+    case 'LONGJUMP':
+    fees="100";
+    getfees.value=fees;
+    break;
+    case 'COUNTERSTRIKE':
+    fees="500";
+    getfees.value=fees;
+    break;
+    case 'FIFA':
     fees="150";
     getfees.value=fees;
     break;
-    case 'Management Quiz':
+    case 'PUBGSQUAD':
+    fees="300";
+    getfees.value=fees;
+    break;
+    case 'PUBGSQOLO':
     fees="150";
     getfees.value=fees;
     break;
-    case 'Management JAM':
-    fees="150";
+    case 'CROSSFIT':
+    fees="200";
+    getfees.value=fees;
+    break;
+    case 'BOX-CRICKET':
+    fees="500";
     getfees.value=fees;
     break;
     default:
     getfees.value="0";
 }
 
+console.log(select.value);
 const patterns = {
     phone1:/^(7|8|9)[0-9]{9}$/,
     phone2:/^(7|8|9)[0-9]{9}$/,
@@ -141,6 +127,7 @@ const patterns = {
     college:/^[a-zA-Z ]+$/,
     email:/^[a-zA-Z_0-9]+@(gmail|hotmail|yahoo|).(com|in|)$/
 };
+
 function validate(field,regex){
     if(regex.test(field.value))
     {field.style.borderBottom = "2px solid green";}
@@ -161,35 +148,3 @@ if(firstphone.value!=secondphone.value && select.value!='')
 else{
 message.innerHTML="NOT VERIFIED!";
 }});
-
-Array.from(Accommodation).forEach(function(radio){
-    radio.addEventListener('click',function(el){
-        if(el.target.attributes.value.value == "Yes")
-        {
-           Accommodation_info[0].style.display="inline";
-           Accommodation_info[1].style.display="inline";
-        }
-        else if(el.target.attributes.value.value == "No")
-        {
-           Accommodation_info[0].style.display="none";
-           Accommodation_info[1].style.display="none";
-        }
-    });
-});
-
-Array.from(category).forEach(function(radio){
-    radio.addEventListener('click',function(el){
-        if(el.target.attributes.value.value=="Solo"){
-              showcategory.innerHTML="Solo";
-              teammates.style.display = "none";
-              teamname.style.display = "none";
-              leader.attributes.placeholder.value="Name*";
-        }
-        else if(el.target.attributes.value.value=="Team"){
-            showcategory.innerHTML="Team";
-            teammates.style.display = "inline";
-            teamname.style.display= "inline";
-            leader.attributes.placeholder.value="Name of Leader*";
-        }
-    });
-});
